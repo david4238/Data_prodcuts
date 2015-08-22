@@ -8,7 +8,7 @@ shinyUI(pageWithSidebar(
                                   "All" = "All")),
                 br(),
                 selectInput("quateg", "Choose a combined event:", 
-                            choices = c("Running", "Jumping", "Throwing", "middle-distance race",  "Pole vault" )),
+                            choices = c("Running", "Jumping", "Throwing", "Middle distance race",  "Pole vault" )),
                 
                 
                 
@@ -21,7 +21,7 @@ shinyUI(pageWithSidebar(
                         tabPanel("Graph View", plotOutput("plotv")), 
                         tabPanel("Table data view", dataTableOutput("tablev")),
                         tabPanel("Become a champion", verbatimTextOutput("champion")),
-                        tabPanel("Documentation", a("Link to documentation on Rpubs", href="http://rpubs.com/asdp38/102472"))
+                        tabPanel("Documentation", a("Link to documentation on Rpubs", href="http://www.rpubs.com/asdp38/102472"))
                 )
         )
 )
